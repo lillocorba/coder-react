@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Fragment } from 'react'
-import "./Components/NavBar"
+import NavBar from "./Components/NavBar"
 
 export default function App() {
 
