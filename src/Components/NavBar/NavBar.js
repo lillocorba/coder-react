@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import './NavBar.css'
+import CartWidget from '../CartWidget/CartWidget'
 
 export default function NavBar() {
     return (
@@ -18,6 +19,9 @@ export default function NavBar() {
                             <li><a href="#">Contacto</a></li>
                         </ul>
                     </nav>
+                </div>
+                <div className='cart-container'>
+                    <CartWidget />
                 </div>
             </div>
         </Fragment >
