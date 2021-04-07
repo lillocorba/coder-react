@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contador-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.numero-container {
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.numero {
+    font-size: 30px;
+}
+
+.stock {
+    margin-bottom: 20px;
+}
+
+.boton {
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.boton-rojo {
+    background-color: red;
+}
+
+.boton-verde {
+    background-color: green;
+}
