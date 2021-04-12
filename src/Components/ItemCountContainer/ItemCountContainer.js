@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 export default function ItemCountContainer() {
 
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0)
 
     const sumar = () => {
         if (count < 10) {
@@ -14,7 +14,7 @@ export default function ItemCountContainer() {
     }
 
     const restar = () => {
-        if (count > 1) {
+        if (count > 0) {
             setCount(count - 1)
         } else {
             return

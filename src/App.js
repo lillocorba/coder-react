@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './App.css'
-import { Fragment } from 'react'
+import 'semantic-ui-css/semantic.min.css'
 import NavBar from "./Components/NavBar/NavBar"
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
-import ItemCount from './Components/ItemCount/ItemCount'
 import ItemCountContainer from './Components/ItemCountContainer/ItemCountContainer'
 
 export default function App() {
