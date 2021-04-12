@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 50px;
+    row-gap: 50px;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -15,11 +16,11 @@
     padding: 30px 15px 30px 15px;
     border-radius: 30px;
     transform: translate(0px);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .card-producto:hover {
-    transform: translate(0px, -50px);
+    transform: translate(0px, -30px);
 }
 
 .price-product {
