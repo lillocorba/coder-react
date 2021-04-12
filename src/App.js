@@ -11,7 +11,6 @@ export default function App() {
     <Fragment>
       <NavBar />
       <ItemListContainer greeting='Martín' />
-      <ItemCountContainer />
     </Fragment>
   )
 }

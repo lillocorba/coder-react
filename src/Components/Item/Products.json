@@ -2,29 +2,29 @@
     {
         "id": 1,
         "title": "Zapatillas Nike Air Zoom Pegasus 37",
-        "description": "Las zapatillas Nike Air Zoom Pegasus 37 nacieron para brindar una experiencia superior a la hora de hacer running.",
+        "description": "Las zapatillas Pegasus 37 nacieron para brindar una experiencia superior a la hora de hacer running.",
         "price": "$17.999",
-        "image": "https://ibb.co/VvhYxH0"
+        "image": "https://i.ibb.co/Svf4x2b/NI-BQ9646-007-1-1.jpg"
     },
     {
         "id": 2,
         "title": "Zapatillas Nike Zoom Winflo 6",
         "description": "Las Zapatillas Nike Air Zoom Winflo 6, son un calzado cómodo y ligero para tus días de running.",
         "price": "$15.499",
-        "image": "https://ibb.co/f8dFJgg"
+        "image": "https://i.ibb.co/bH5mt00/NI-CK8605-003-1.jpg"
     },
     {
         "id": 3,
-        "title": "Zapatillas Nike Air Zoom Pegasus 37 Flyease",
+        "title": "Zapatillas Nike Air Zoom Pegasus 38",
         "description": "El sistema FlyEase te permite un calce mucho más rápido y fácil gracias a la apertura con cremallera.",
         "price": "$18.000",
-        "image": "https://ibb.co/CKn31yy"
+        "image": "https://i.ibb.co/MkRx2HH/NI-AQ7497-001-1.jpg"
     },
     {
         "id": 4,
-        "title": "Zapatillas Nike Air Zoom Pegasus 37 FlyEase Max",
+        "title": "Zapatillas Nike Air Zoom Pegasus 39",
         "description": "Las zapatillas Nike Air Zoom Pegasus 37 FlyEase proporcionan velocidad confiable para todos los atletas.",
         "price": "$18.999",
-        "image": "https://ibb.co/F0XYyKq"
+        "image": "https://i.ibb.co/k9JDwx6/NI-CK8474-100-1.jpg"
     }
 ]
