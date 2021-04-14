@@ -3,7 +3,6 @@ import './Item.css'
 
 export default function Item({ productos }) {
 
-
     return (
         <div className="card-container">
             {
@@ -23,12 +22,12 @@ export default function Item({ productos }) {
                                 <p className="description-product">{product.description}</p>
                             </div>
                             <div className="boton-container">
-                                <button className="boton-product">Comprar</button>
+                                <button className="boton-product">Ver producto</button>
                             </div>
                         </div>
                     )
                 })
             }
-        </div>
+        </div >
     )
 }
