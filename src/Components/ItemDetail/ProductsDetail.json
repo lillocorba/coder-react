@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Zapatillas Nike Air Zoom Pegasus 37",
+        "description": "Las zapatillas Nike Air Zoom Pegasus 37 nacieron para brindar una experiencia superior a la hora de hacer running. Confeccionadas con la espuma Nike React para pisadas con mayor rebote y la unidad Air Zoom que duplica el tamaño de versiones anteriores para una mejor amortiguación al correr. Llegar más lejos nunca fue tan fácil.",
+        "price": "$17.999",
+        "image": "https://i.ibb.co/Svf4x2b/NI-BQ9646-007-1-1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Zapatillas Nike Zoom Winflo 6",
+        "description": "Las Zapatillas Nike Air Zoom Winflo 6, son un calzado cómodo y ligero para tus días de running. Confeccionado en materiales que brindan amortiguación y resistencia.",
+        "price": "$15.499",
+        "image": "https://i.ibb.co/bH5mt00/NI-CK8605-003-1.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Zapatillas Nike Air Zoom Pegasus 38",
+        "description": "Las zapatillas Nike Air Zoom Pegasus 37 no son otra cosa que una de las zapatillas más destacadas del mundo del running en 2020. Su mediasuela Nike React y la unidad Zoom Air para cubrir gran parte del antepié te brindan mejores transiciones y suavidad para tu pie. Sus avances en transpirabilidad y ligereza gracias a un patrón de costura similar a las Zoom Fly 3 las vuelven fundamentales para runners amateurs que quieran hacer de sus jornadas de entrenamiento, una de placer.",
+        "price": "$18.000",
+        "image": "https://i.ibb.co/MkRx2HH/NI-AQ7497-001-1.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Zapatillas Nike Air Zoom Pegasus 39",
+        "description": "Las zapatillas Nike Air Zoom Pegasus 37 FlyEase proporcionan velocidad confiable para todos los atletas. Confeccionadas con la espuma Nike React en la entresuela para una pisada con mayor rebote y la unidad Air Zoom que duplica el tamaño de versiones anteriores para una mejor amortiguación al correr. El sistema FlyEase te permite un calce mucho más rápido y fácil gracias a la apertura con cremallera.",
+        "price": "$18.999",
+        "image": "https://i.ibb.co/k9JDwx6/NI-CK8474-100-1.jpg"
+    }
+]

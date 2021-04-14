@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Products from '../Item/Products.json'
+import ProductsDetail from '../ItemDetail/ProductsDetail.json'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 export default function ItemDetailContainer() {
@@ -8,13 +8,13 @@ export default function ItemDetailContainer() {
 
     useEffect(() => {
         setTimeout(() => {
-            setProductos(Products)
+            setProductos(ProductsDetail)
         }, 2000)
     }, [])
 
     return (
         <div>
-            <ItemDetail productos={productos} />
+            <ItemDetail products={productos} />
         </div>
     )
 }
