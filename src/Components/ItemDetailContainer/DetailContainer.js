@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Item from '../Item/Item'
-import './ItemList.css'
 
-export default function ItemList() {
+export default function DetailContainer({ match }) {
 
     const [users, setUsers] = useState([])
 
@@ -12,13 +10,9 @@ export default function ItemList() {
             .then(data => setUsers(data))
     }, [])
 
-    console.log(users)
-
     return (
         <div>
-            <div className="item-container">
-                <Item users={users} />
-            </div>
+
         </div>
     )
 }

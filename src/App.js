@@ -8,7 +8,7 @@ import Home from './Components/Home/Home'
 import Footer from './Components/Footer/Footer'
 import Credits from './Components/Credits/Credits'
 import ItemDetail from './Components/ItemDetail/ItemDetail'
-import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
+import DetailContainer from './Components/ItemDetailContainer/DetailContainer'
 
 export default function App() {
 
@@ -18,13 +18,13 @@ export default function App() {
         <NavBar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/productos" exact component={ItemListContainer} />
-          <Route path="/productos/:id" component={ItemDetail} />
+          <Route path="/users" exact component={ItemListContainer} />
+          <Route path="/users/:id" component={ItemDetail} />
         </Switch>
+        <DetailContainer />
         <Footer />
         <Credits />
       </Fragment>
     </BrowserRouter>
   )
 }
-

@@ -2,29 +2,23 @@ import React from 'react'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-export default function Item({ productos }) {
+export default function Item({ users }) {
 
     return (
         <div className="card-container">
             {
-                productos.map((product) => {
+                users.map((user) => {
                     return (
                         <div className="card-producto">
                             <div className="img-container">
-                                <img src={product.image} alt="" className="img-product"></img>
+                                <img src={user.avatar_url} alt="" className="img-product"></img>
                             </div>
                             <div className="title-container">
-                                <h4 className="title-product">{product.title}</h4>
+                                <h4 className="title-product">{user.login}</h4>
                             </div>
-                            <div className="price-container">
-                                <p className="price-product">{product.price}</p>
-                            </div>
-                            <div className="description-container">
-                                <p className="description-product">{product.description}</p>
-                            </div>
-                            <Link to={`productos/${product.id}`}>
+                            <Link to={`users/${user.id}`}>
                                 <div className="boton-container">
-                                    <button className="boton-product">Ver producto</button>
+                                    <button className="boton-product">Ver usuario</button>
                                 </div>
                             </Link>
                         </div>
