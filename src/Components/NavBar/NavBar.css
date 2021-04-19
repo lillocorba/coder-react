@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: black;
-    padding: 30px 0px 20px 0px;
+    background-color: #1D3649;
+    padding: 50px 0px 40px 0px;
     align-items: center;
 }
 
 .brand-container h4 {
-    color: white;
+    color: #D5B695;
+    margin-top: -10px;
 }
 
 .nav-container nav ul {
@@ -23,5 +24,10 @@
 
 .nav-container nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #D5B695;
+}
+
+a, a:hover {
+    color: #D5B695;
+    text-decoration: none;
 }

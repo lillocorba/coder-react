@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5B695;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer-brand {
+    font-family: 'Poppins', sans-serif;
+    color: #1D3649;
+    font-weight: bold;
+    font-size: 24px;
+}

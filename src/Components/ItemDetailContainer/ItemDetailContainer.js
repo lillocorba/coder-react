@@ -14,7 +14,7 @@ export default function ItemDetailContainer() {
 
     return (
         <div>
-            <ItemDetail products={productos} />
+            <ItemDetail productos={productos} />
         </div>
     )
 }

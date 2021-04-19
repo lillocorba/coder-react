@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "title": "Zapatillas Nike Air Zoom Pegasus 37",
-        "description": "Las zapatillas Pegasus 37 nacieron para brindar una experiencia superior a la hora de hacer running.",
-        "price": "$17.999",
-        "image": "https://i.ibb.co/Svf4x2b/NI-BQ9646-007-1-1.jpg"
+        "title": "Gin Hendrick's 750cc",
+        "description": "Un destilado suave con personalidad propia, sabores sutiles y notas florales con toques cítricos.",
+        "price": "$6.999",
+        "image": "https://i.ibb.co/PGB0YnZ/hendricks-s.png"
     },
     {
         "id": 2,
-        "title": "Zapatillas Nike Zoom Winflo 6",
-        "description": "Las Zapatillas Nike Air Zoom Winflo 6, son un calzado cómodo y ligero para tus días de running.",
-        "price": "$15.499",
+        "title": "Gin Nordés 700cc",
+        "description": "Su base alcohólica utiliza uva albariño para conseguir un aroma suave con notas frutales y de flores.",
+        "price": "$6.300",
         "image": "https://i.ibb.co/bH5mt00/NI-CK8605-003-1.jpg"
     },
     {

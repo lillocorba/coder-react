@@ -1,3 +1,7 @@
 .itemList-container {
-    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
 }
