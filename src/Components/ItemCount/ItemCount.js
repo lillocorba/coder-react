@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { CountContext } from '../CountContext/CountContext';
 import './ItemCount.css'
 
-const ItemCount = ({ sumar, restar, count }) => {
+const ItemCount = ({ restar, count, sumar }) => {
+
     return (
         <div className='container'>
             <div className='contador-container'>

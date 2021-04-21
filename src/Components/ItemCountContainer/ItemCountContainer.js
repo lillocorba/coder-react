@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { CountContext } from '../CountContext/CountContext'
 import ItemCount from '../ItemCount/ItemCount'
 
 export default function ItemCountContainer() {
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useContext(CountContext)
 
     const sumar = () => {
         if (count < 10) {
@@ -23,7 +24,7 @@ export default function ItemCountContainer() {
 
     return (
         <div>
-            <ItemCount sumar={sumar} restar={restar} count={count} />
+            <ItemCount restar={restar} count={count} sumar={sumar} />
         </div>
     )
 }

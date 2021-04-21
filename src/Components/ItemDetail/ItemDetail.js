@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import './ItemDetail.css'
+import ItemCountContainer from '../ItemCountContainer/ItemCountContainer'
+import { CountContext } from '../CountContext/CountContext'
+import PurchaseBtn from '../PurchaseBtn/PurchaseBtn'
 
 export default function ItemDetail({ match }) {
 
@@ -12,8 +15,7 @@ export default function ItemDetail({ match }) {
             .then(data => setUser(data))
     }, [])
 
-
-    console.log(user)
+    const [count, setCount] = useContext(CountContext)
 
     return (
         <div className="wrapper" key="" >
@@ -24,9 +26,8 @@ export default function ItemDetail({ match }) {
                 <div className="product-detail-container-info">
                     <h2 className="detail-product-title">{user.name}</h2>
                     <h4 className="detail-product-price">Followers: {user.followers}</h4>
-                    <div className="detail-product-container-btn">
-                        <a className="detail-product-btn" href={user.html_url} target="_blank">Ver perfil</a>
-                    </div>
+                    <ItemCountContainer />
+                    {(count > 0 ? <PurchaseBtn /> : "")}
                 </div>
             </div>
         </div >

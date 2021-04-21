@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { CountContext } from '../CountContext/CountContext'
 
 export default function DetailContainer({ match }) {
+
+    const saludo = useContext(CountContext)
 
     const [users, setUsers] = useState([])
 
@@ -12,7 +15,7 @@ export default function DetailContainer({ match }) {
 
     return (
         <div>
-
+            <h4>{saludo}</h4>
         </div>
     )
 }

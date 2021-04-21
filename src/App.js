@@ -9,22 +9,25 @@ import Footer from './Components/Footer/Footer'
 import Credits from './Components/Credits/Credits'
 import ItemDetail from './Components/ItemDetail/ItemDetail'
 import DetailContainer from './Components/ItemDetailContainer/DetailContainer'
+import { CountProvider } from './Components/CountContext/CountContext'
 
 export default function App() {
 
   return (
-    <BrowserRouter>
-      <Fragment>
-        <NavBar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/users" exact component={ItemListContainer} />
-          <Route path="/users/:id" component={ItemDetail} />
-        </Switch>
-        <DetailContainer />
-        <Footer />
-        <Credits />
-      </Fragment>
-    </BrowserRouter>
+    <CountProvider>
+      <BrowserRouter>
+        <Fragment>
+          <NavBar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/users" exact component={ItemListContainer} />
+            <Route path="/users/:id" component={ItemDetail} />
+          </Switch>
+          <DetailContainer />
+          <Footer />
+          <Credits />
+        </Fragment>
+      </BrowserRouter>
+    </CountProvider>
   )
 }

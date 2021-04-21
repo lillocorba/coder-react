@@ -1,16 +1,18 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useContext } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
+import { CountContext } from '../CountContext/CountContext';
 
 export default function NavBar() {
+
     return (
         <Fragment>
             <div className="container-fluid menu">
                 <Link to="/" className="link">
                     <div className="brand-container">
-                        <h4>GitHub Users</h4>
+                        <h4>GitUsers</h4>
                     </div>
                 </Link>
                 <div className="nav-container">
