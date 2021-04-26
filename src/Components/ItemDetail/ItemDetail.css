@@ -42,3 +42,24 @@
 .detail-product-img {
     width: 300px;
 }
+
+.detail-product-container-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.detail-product-btn {
+    margin-top: 30px;
+    background-color: #1D3649;
+    color: #D5B695;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+}
+
+.detail-product-btn:hover {
+    background-color: #D5B695;
+    color: #1D3649;
+}
