@@ -1,9 +1,8 @@
-import React, { Fragment, useContext } from 'react'
+import React, { Fragment } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
-import { CountContext } from '../CountContext/CountContext';
 
 export default function NavBar() {
 
@@ -28,7 +27,9 @@ export default function NavBar() {
                     </nav>
                 </div>
                 <div className='cart-container'>
-                    <CartWidget />
+                    <Link to="/cart" className="link">
+                        <CartWidget />
+                    </Link>
                 </div>
             </div>
         </Fragment >

@@ -12,8 +12,6 @@ export default function ItemList() {
             .then(data => setUsers(data))
     }, [])
 
-    console.log(users)
-
     return (
         <div>
             <div className="item-container">

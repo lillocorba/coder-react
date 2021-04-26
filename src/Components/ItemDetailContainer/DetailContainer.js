@@ -15,7 +15,6 @@ export default function DetailContainer({ match }) {
 
     return (
         <div>
-            <h4>{saludo}</h4>
         </div>
     )
 }
