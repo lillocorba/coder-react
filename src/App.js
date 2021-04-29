@@ -11,6 +11,7 @@ import ItemDetail from './Components/ItemDetail/ItemDetail'
 import DetailContainer from './Components/ItemDetailContainer/DetailContainer'
 import { CountProvider } from './Components/CountContext/CountContext'
 import { CartProvider } from './Components/CartContext/CartContext'
+import { UserProvider } from './Components/UserContext/UserContext'
 import CartContainer from './Components/CartContainer/CartContainer'
 
 export default function App() {
@@ -18,20 +19,22 @@ export default function App() {
   return (
     <CountProvider>
       <CartProvider>
-        <BrowserRouter>
-          <Fragment>
-            <NavBar />
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/users" exact component={ItemListContainer} />
-              <Route path="/users/:id" component={ItemDetail} />
-              <Route path="/cart" component={CartContainer} />
-            </Switch>
-            <DetailContainer />
-            <Footer />
-            <Credits />
-          </Fragment>
-        </BrowserRouter>
+        <UserProvider>
+          <BrowserRouter>
+            <Fragment>
+              <NavBar />
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/users" exact component={ItemListContainer} />
+                <Route path="/users/:id" component={ItemDetail} />
+                <Route path="/cart" component={CartContainer} />
+              </Switch>
+              <DetailContainer />
+              <Footer />
+              <Credits />
+            </Fragment>
+          </BrowserRouter>
+        </UserProvider>
       </CartProvider>
     </CountProvider>
   )

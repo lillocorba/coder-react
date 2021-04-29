@@ -4,10 +4,11 @@ import './ItemDetail.css'
 import ItemCountContainer from '../ItemCountContainer/ItemCountContainer'
 import { CountContext } from '../CountContext/CountContext'
 import { CartContext } from '../CartContext/CartContext'
+import { UserContext } from '../UserContext/UserContext'
 
 export default function ItemDetail({ match }) {
 
-    const [user, setUser] = useState({})
+    const [user, setUser] = useContext(UserContext)
 
     useEffect(() => {
         fetch(`https://api.github.com/users/${match.params.id}`)
@@ -21,6 +22,7 @@ export default function ItemDetail({ match }) {
     const definirItem = (user) => {
         setCart([...cart, user])
     }
+
 
     return (
         <div className="wrapper" key={user.id} >
