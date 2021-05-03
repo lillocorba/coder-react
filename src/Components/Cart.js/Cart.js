@@ -2,12 +2,14 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import './Cart.css'
 import { CartContext } from '../CartContext/CartContext'
+import { CountContext } from '../CountContext/CountContext'
 import { UserContext } from '../UserContext/UserContext'
 
 export default function Cart() {
 
-    const [user, setUser] = useContext(UserContext)
+    const [items, setItems] = useContext(UserContext)
     const [cart, setCart] = useContext(CartContext)
+    const [count, setCount] = useContext(CountContext)
     const [IsEmpty, setIsEmpty] = useState(true)
 
     // Condicional para setear estado y mostrar o no "El carrito está vacío"
@@ -33,13 +35,15 @@ export default function Cart() {
                 return (
                     <div className="card-item">
                         <div className="card-item-img-container">
-                            <img src={item.avatar_url} className="card-item-img" alt="" />
+                            <img src={item.image} className="card-item-img" alt="" />
                         </div>
                         <div className="card-item-name-container">
-                            <h3 className="card-item-name">{item.name}</h3>
+                            <h3 className="card-item-name">{item.title}</h3>
+                            <p className="card-item-price">{'$' + item.price}</p>
+                            <p className="card-item-quantity">Cantidad: {count}</p>
                         </div>
                         <div className="card-item-btn-container">
-                            <button className="card-item-btn" onClick={() => removeProduct(user.id)}>X</button>
+                            <button className="card-item-btn" onClick={() => removeProduct(item.id)}>X</button>
                         </div>
                     </div>
                 )

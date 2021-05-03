@@ -11,7 +11,7 @@ export default function NavBar() {
             <div className="container-fluid menu">
                 <Link to="/" className="link">
                     <div className="brand-container">
-                        <h4>GitUsers</h4>
+                        <h4>GinShop</h4>
                     </div>
                 </Link>
                 <div className="nav-container">
@@ -20,8 +20,8 @@ export default function NavBar() {
                             <Link to="/" className="link-nav">
                                 <li>Home</li>
                             </Link>
-                            <Link to="/users">
-                                <li>Usuarios</li>
+                            <Link to="/productos">
+                                <li>Productos</li>
                             </Link>
                         </ul>
                     </nav>

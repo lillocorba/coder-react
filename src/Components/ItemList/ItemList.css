@@ -5,3 +5,12 @@
     align-items: center;
     width: 75vw;
 }
+
+.h2-productos-destacados-container {
+    margin-bottom: 50px;
+}
+
+.h2-productos-destacados {
+    font-weight: bold;
+    text-align: center;
+}

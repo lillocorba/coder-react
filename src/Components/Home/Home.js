@@ -8,7 +8,7 @@ export default function Home() {
             <div className="home">
                 <div className="home-banner">
                     <div>
-                        <h2 className="home-banner-h2">Conocé todos nuestros usuarios.</h2>
+                        <h2 className="home-banner-h2">Conocé todos nuestros productos.</h2>
                     </div>
                 </div>
             </div>

@@ -14,6 +14,7 @@ import { CartProvider } from './Components/CartContext/CartContext'
 import { UserProvider } from './Components/UserContext/UserContext'
 import CartContainer from './Components/CartContainer/CartContainer'
 
+
 export default function App() {
 
   return (
@@ -25,8 +26,8 @@ export default function App() {
               <NavBar />
               <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/users" exact component={ItemListContainer} />
-                <Route path="/users/:id" component={ItemDetail} />
+                <Route path="/productos" exact component={ItemListContainer} />
+                <Route path="/productos/:id" component={ItemDetail} />
                 <Route path="/cart" component={CartContainer} />
               </Switch>
               <DetailContainer />
