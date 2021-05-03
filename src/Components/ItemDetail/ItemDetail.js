@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './ItemDetail.css'
 import ItemCountContainer from '../ItemCountContainer/ItemCountContainer'
 import { CountContext } from '../CountContext/CountContext'
@@ -9,6 +9,7 @@ import { db } from '../../firebase'
 export default function ItemDetail({ match }) {
 
     const [items, setItems] = useState([])
+    const { id } = useParams()
 
     const getItems = async () => {
         db.collection('productos').onSnapshot((querySnapshot) => {
@@ -23,7 +24,7 @@ export default function ItemDetail({ match }) {
 
     useEffect(() => {
         getItems()
-    })
+    }, [])
 
     const [count, setCount] = useContext(CountContext)
     const [cart, setCart] = useContext(CartContext)
@@ -44,7 +45,10 @@ export default function ItemDetail({ match }) {
                                 </div>
                                 <div className="product-detail-container-info">
                                     <h2 className="detail-product-title">{item.title}</h2>
-                                    <h4 className="detail-product-price">Followers: {item.price}</h4>
+                                    <h4 className="detail-product-price">{'$' + item.price}</h4>
+                                    <div>
+                                        <p className="detail-product-description">{item.description}</p>
+                                    </div>
                                     <ItemCountContainer />
                                     {(count > 0 ? <Link to="/cart">
                                         <div className="detail-product-container-btn">

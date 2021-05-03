@@ -1,8 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 30px;
 }
 
 .contador-container {
@@ -18,7 +19,7 @@
 }
 
 .numero {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .stock {
@@ -28,15 +29,24 @@
 .boton {
     color: white;
     border: none;
-    padding: 10px 30px 10px 30px;
+    width: 40px;
+    height: 40px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .boton-rojo {
-    background-color: red;
+    background-color: #D5B695;
+    color: #1D3649;
+    padding: 0px;
 }
 
 .boton-verde {
-    background-color: green;
+    background-color: #D5B695;
+    color: #1D3649;
 }
