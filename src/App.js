@@ -13,6 +13,7 @@ import { CountProvider } from './Components/CountContext/CountContext'
 import { CartProvider } from './Components/CartContext/CartContext'
 import { UserProvider } from './Components/UserContext/UserContext'
 import CartContainer from './Components/CartContainer/CartContainer'
+import Checkout from './Components/Checkout/Checkout'
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
                 <Route path="/productos" exact component={ItemListContainer} />
                 <Route path="/productos/:id" component={ItemDetail} />
                 <Route path="/cart" component={CartContainer} />
+                <Route path="/checkout" component={Checkout} />
               </Switch>
               <DetailContainer />
               <Footer />

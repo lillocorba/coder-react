@@ -25,7 +25,7 @@ export default function ItemList() {
     return (
         <div>
             <div className="h2-productos-destacados-container">
-                <h2 className="h2-productos-destacados">Productos Destacados</h2>
+                <h2 className="h2-productos-destacados">Productos</h2>
             </div>
             <div className="item-container">
                 <Item items={items} />
