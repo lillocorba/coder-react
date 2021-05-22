@@ -1,3 +1,9 @@
+# Sweet Alert 2
+
+Instalar la dependencia Sweet Alert 2 para la correcta visualización del proyecto.
+
+npm install sweetalert2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
